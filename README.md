@@ -1,4 +1,4 @@
-# BooksDocker
+# Mphasis Contest Submission
 My Mphasis submission with docker compose
 Making the code public as the contest is over.
 
