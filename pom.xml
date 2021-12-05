@@ -54,7 +54,6 @@
                 <mainClass>{BooksDockerApplication}</mainClass>
                 <addResources>true</addResources>
             </configuration>
-				<finalName>books-mysql</finalName></configuration>
 			</plugin>
 		</plugins>
 	</build>
