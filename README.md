@@ -8,5 +8,6 @@ Alternatively you can just use the docker compose file by executing
 
 docker-compose up
 
+CICD usinng Github Actions to push to docker hub
 
 
