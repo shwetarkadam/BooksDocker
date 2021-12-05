@@ -3,9 +3,9 @@ version: '3.3'
 
 services:
     #service 1: definition of mysql database
-    mysql-db2:
+    mysql-db:
       image: mysql:5.7
-      container_name: mysql-db2   
+      container_name: mysql-db
       environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_PASSWORD=root
@@ -28,7 +28,7 @@ services:
       depends_on:
         - mysql-db2
       environment:
-       - PMA_HOST=mysql-db2
+       - PMA_HOST=mysql-db
     
     
     
@@ -41,8 +41,8 @@ services:
       restart: always
                     
       depends_on:                           #define dependencies of this app
-        - mysql-db2                              #dependency name (which is defined with this name 'db' in this file earlier)
+        - mysql-db                              #dependency name (which is defined with this name 'db' in this file earlier)
       environment:
-        SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db2:3306/BooksMphasis?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false&useUnicode=true
+        SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/BooksMphasis?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false&useUnicode=true
         SPRING_DATASOURCE_USERNAME: root
         SPRING_DATASOURCE_PASSWORD: root
