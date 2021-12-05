@@ -6,7 +6,7 @@ COPY src /workspace/src
 EXPOSE 8085
 RUN mvn clean package -DskipTests
 CMD mvn spring-boot:run
-RUN mvn -B clean verify
+RUN mvn -B clean verify -DskipTests
 
 FROM adoptopenjdk/openjdk11:jre-11.0.6_10-alpine
 COPY --from=build /workspace/target/*.jar app.jar
