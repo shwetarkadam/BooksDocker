@@ -10,8 +10,8 @@ jobs:
   build:
     name: CI action
     runs-on: ubuntu-latest
-    container:
-      image: lucasalt/act_base:latest
+   # container:
+    #  image: lucasalt/act_base:latest
 
     steps:
       - uses: actions/checkout@v2
