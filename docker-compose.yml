@@ -20,13 +20,13 @@ services:
     #service 2: definition of phpMyAdmin
     phpmyadmin:
       image: phpmyadmin/phpmyadmin:latest
-      container_name: my-php-myadmin2
+      container_name: my-php-myadmin
       ports:
         - "8082:80"
       restart: always
         
       depends_on:
-        - mysql-db2
+        - mysql-db
       environment:
        - PMA_HOST=mysql-db
     
