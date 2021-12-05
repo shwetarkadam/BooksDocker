@@ -1,5 +1,5 @@
-# Mphasis Contest Submission
-My Mphasis submission with docker compose
+# Mphasis Hackerearth  Contest Submission
+My Hackerearth Mphasis submission with docker compose
 Making the code public as the contest is over.
 
 Pull my service image from https://hub.docker.com/r/shwetakadam25/mphasis_books
