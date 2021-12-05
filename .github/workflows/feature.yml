@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: CI action
+    name: Feature CI action
     runs-on: ubuntu-latest
    # container:
     #  image: lucasalt/act_base:latest
