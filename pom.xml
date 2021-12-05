@@ -50,6 +50,10 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					
+                <mainClass>{BooksDockerApplication}</mainClass>
+                <addResources>true</addResources>
+            </configuration>
 				<finalName>books-mysql</finalName></configuration>
 			</plugin>
 		</plugins>
